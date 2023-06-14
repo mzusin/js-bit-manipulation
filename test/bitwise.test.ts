@@ -1,4 +1,4 @@
-import { isEven, isOdd, divideBy2, multiplyBy2, equals } from '../src/core/bitwise';
+import { isEven, isOdd, divideBy2, multiplyBy2, equals, getLSB } from '../src/core/bitwise';
 
 describe('Bitwise', () => {
 
@@ -106,6 +106,35 @@ describe('Bitwise', () => {
             expect(() => equals(2.5, 2.5)).toThrow('Input must be an integer.');
             expect(() => equals(2, 2.5)).toThrow('Input must be an integer.');
             expect(() => equals(2.5, 2)).toThrow('Input must be an integer.');
+        });
+    });
+
+    describe('getLSB()', () => {
+        it('returns 0 for even numbers', () => {
+            expect(getLSB(0)).toBe(0);
+            expect(getLSB(2)).toBe(0);
+            expect(getLSB(4)).toBe(0);
+            expect(getLSB(10)).toBe(0);
+        });
+
+        it('returns 1 for odd numbers', () => {
+            expect(getLSB(1)).toBe(1);
+            expect(getLSB(3)).toBe(1);
+            expect(getLSB(5)).toBe(1);
+            expect(getLSB(7)).toBe(1);
+        });
+
+        it('returns 0 for negative even numbers', () => {
+            expect(getLSB(-2)).toBe(0);
+            expect(getLSB(-4)).toBe(0);
+            expect(getLSB(-10)).toBe(0);
+        });
+
+        it('returns 1 for negative odd numbers', () => {
+            expect(getLSB(-1)).toBe(1);
+            expect(getLSB(-3)).toBe(1);
+            expect(getLSB(-5)).toBe(1);
+            expect(getLSB(-7)).toBe(1);
         });
     });
 });

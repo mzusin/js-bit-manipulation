@@ -1,5 +1,6 @@
 # Bit Manipulation in JavaScript
 A collection of bit manipulation helpers written TypeScript.
+This repository is intended for learning bit manipulation in JavaScript/TypeScript.
 
 ## Functions List
 - `export const isEven: (num: number) => boolean;`
@@ -7,6 +8,7 @@ A collection of bit manipulation helpers written TypeScript.
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
 - `export const equals: (num1: number, num2: number) => boolean;`
+- `export const getLSB: (num: number) => number; // Get the least significant bit.` 
 
 
 ``` 
