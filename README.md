@@ -4,7 +4,7 @@ This repository is intended for learning bit manipulation in JavaScript/TypeScri
 Each function has [Jest](https://jestjs.io/) unit tests.
 
 ## Functions List
-- ```ts export const isEven: (num: number) => boolean;```
+- `export const isEven: (num: number) => boolean;`
 - `export const isOdd: (num: number) => boolean;`
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
