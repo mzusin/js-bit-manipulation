@@ -2,6 +2,7 @@ declare module 'mz-bitwise' {
     export const getBinaryString: (num: number) => string;
     export const convertToUInt32: (num: number) => number;
     export const isEven: (num: number) => boolean;
+    export const isEquals: (num1: number, num2: number) => boolean;
     export const isOdd: (num: number) => boolean;
     export const divideBy2: (num: number) => number;
     export const multiplyBy2: (num: number) => number;

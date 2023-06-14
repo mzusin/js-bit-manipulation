@@ -7,11 +7,13 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## Functions List
 - `export const getBinaryString: (num: number) => string;`
 - `export const convertToUInt32: (num: number) => number;`
-- `export const isEven: (num: number) => boolean;`
-- `export const isOdd: (num: number) => boolean;`
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
-- `export const equals: (num1: number, num2: number) => boolean;`
+
+## Predicates
+- `export const isEven: (num: number) => boolean;`
+- `export const isOdd: (num: number) => boolean;`
+- `export const isEquals: (num1: number, num2: number) => boolean;`
 
 ## Least Significant Bit (LSB)
 - `export const getLSB: (num: number) => number;`
