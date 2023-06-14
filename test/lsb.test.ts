@@ -1,4 +1,4 @@
-import { getLSB, removeLSB, setLSB } from '../src/core/lsb';
+import { getLSB, removeLSB, setLSB, unsetLSB } from '../src/core/lsb';
 
 describe('LSB', () => {
 
@@ -88,6 +88,34 @@ describe('LSB', () => {
             expect(setLSB(-3)).toBe(-3);
             expect(setLSB(-5)).toBe(-5);
             expect(setLSB(-7)).toBe(-7);
+        });
+    });
+
+    describe('unsetLSB', () => {
+        it('unsets LSB to 0 for positive even numbers', () => {
+            expect(unsetLSB(2)).toBe(2);
+            expect(unsetLSB(4)).toBe(4);
+            expect(unsetLSB(10)).toBe(10);
+        });
+
+        it('unsets LSB to 0 for positive odd numbers', () => {
+            expect(unsetLSB(1)).toBe(0);
+            expect(unsetLSB(3)).toBe(2);
+            expect(unsetLSB(5)).toBe(4);
+            expect(unsetLSB(7)).toBe(6);
+        });
+
+        it('unsets LSB to 0 for negative even numbers', () => {
+            expect(unsetLSB(-2)).toBe(-2);
+            expect(unsetLSB(-4)).toBe(-4);
+            expect(unsetLSB(-10)).toBe(-10);
+        });
+
+        it('unsets LSB to 0 for negative odd numbers', () => {
+            expect(unsetLSB(-1)).toBe(-2);
+            expect(unsetLSB(-3)).toBe(-4);
+            expect(unsetLSB(-5)).toBe(-6);
+            expect(unsetLSB(-7)).toBe(-8);
         });
     });
 });

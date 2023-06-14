@@ -13,7 +13,8 @@ Each function has [Jest](https://jestjs.io/) unit tests.
 ## Least Significant Bit (LSB)
 - `export const getLSB: (num: number) => number;`
 - `export const removeLSB: (num: number) => number;`
-- `export declare const setLSB: (num: number) => number;`
+- `export const setLSB: (num: number) => number;`
+- `export const unsetLSB: (num: number) => number;`
 
 ``` 
        (                      (    (         
