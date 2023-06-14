@@ -6,6 +6,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Functions List
 - `export const getBinaryString: (num: number) => string;`
+- `export const convertToUInt32: (num: number) => number;`
 - `export const isEven: (num: number) => boolean;`
 - `export const isOdd: (num: number) => boolean;`
 - `export const divideBy2: (num: number) => number;`
