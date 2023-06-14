@@ -10,4 +10,7 @@ declare module 'mz-bitwise' {
     export const removeLSB: (num: number) => number;
     export const setLSB: (num: number) => number;
     export const unsetLSB: (num: number) => number;
+
+    // Most Significant Bit (MSB)
+    export const getMSB: (num: number) => number;
 }

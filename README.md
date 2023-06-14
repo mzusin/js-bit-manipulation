@@ -18,6 +18,12 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const setLSB: (num: number) => number;`
 - `export const unsetLSB: (num: number) => number;`
 
+## Most Significant Bit (MSB)
+- `export const getLSB: (num: number) => number;`
+- `export const removeLSB: (num: number) => number;`
+- `export const setLSB: (num: number) => number;`
+- `export const unsetLSB: (num: number) => number;`
+
 ``` 
        (                      (    (         
    (   )\ )  *   )  (  (      )\ ) )\ )      
