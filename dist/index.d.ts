@@ -13,4 +13,5 @@ declare module 'mz-bitwise' {
 
     // Most Significant Bit (MSB)
     export const getMSB: (num: number) => number;
+    export const setMSB: (num: number) => number;
 }
