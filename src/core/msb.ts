@@ -26,3 +26,14 @@ export const setMSB = (num: number) => {
     const msbMask = 0x80000000; // 0b10000000000000000000000000000000
     return num | msbMask;
 };
+
+/**
+ * We create a mask called that has the MSB unset (set to 0) and all other bits set to 1.
+ * We then use the bitwise AND operator (&) to perform a bitwise AND operation between the input number num and the msbMask.
+ * This operation will unset the MSB of the number by turning off the corresponding bit,
+ * while leaving all other bits unchanged.
+ */
+export const unsetMSB = (num: number) => {
+    const msbMask = 0x7FFFFFFF; // 0b01111111111111111111111111111111
+    return num & msbMask; // 0x7FFF;
+};

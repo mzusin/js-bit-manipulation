@@ -1,4 +1,4 @@
-import { getMSB, setMSB } from '../src/core/msb';
+import { getMSB, setMSB, unsetMSB } from '../src/core/msb';
 
 describe('MSB', () => {
 
@@ -63,6 +63,39 @@ describe('MSB', () => {
 
         it('sets the MSB for zero', () => {
             expect(setMSB(0)).toBe(-2147483648);
+        });
+    });
+
+    describe('unsetMSB()', () => {
+        it('unsets the MSB for positive numbers', () => {
+            expect(unsetMSB(0)).toBe(0);
+            expect(unsetMSB(1)).toBe(1);
+            expect(unsetMSB(10)).toBe(10);
+            expect(unsetMSB(255)).toBe(255);
+            expect(unsetMSB(1000)).toBe(1000);
+        });
+
+        it('unsets the MSB for negative numbers', () => {
+            expect(unsetMSB(-1)).toBe(2147483647);
+            expect(unsetMSB(-10)).toBe(2147483638);
+            expect(unsetMSB(-255)).toBe(2147483393);
+            expect(unsetMSB(-2147483648)).toBe(0);
+            expect(unsetMSB(-1000)).toBe(2147482648);
+        });
+
+        it('does not modify the MSB for numbers with MSB already unset', () => {
+            expect(unsetMSB(2147483647)).toBe(2147483647);
+            expect(unsetMSB(2147483638)).toBe(2147483638);
+            expect(unsetMSB(2147483393)).toBe(2147483393);
+            expect(unsetMSB(2147482648)).toBe(2147482648);
+            expect(unsetMSB(-2147483647)).toBe(1);
+            expect(unsetMSB(-2147483638)).toBe(10);
+            expect(unsetMSB(-2147483393)).toBe(255);
+            expect(unsetMSB(-2147482648)).toBe(1000);
+        });
+
+        it('unsets the MSB for zero', () => {
+            expect(unsetMSB(0)).toBe(0);
         });
     });
 
