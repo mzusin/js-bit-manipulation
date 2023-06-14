@@ -5,4 +5,4 @@ https://github.com/mzusin/js-bit-manipulation
 MIT License      
 Copyright (c) 2023-present, Miriam Zusin       
 */
-var o=()=>{console.log("aaa")};export{o as aaa};
+var o=e=>(e&1)===0,r=e=>(e&1)===1;export{o as isEven,r as isOdd};

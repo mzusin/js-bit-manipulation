@@ -5,4 +5,4 @@ https://github.com/mzusin/js-bit-manipulation
 MIT License      
 Copyright (c) 2023-present, Miriam Zusin       
 */
-var t=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var n=Object.getOwnPropertyNames;var p=Object.prototype.hasOwnProperty;var s=(a,o)=>{for(var r in o)t(a,r,{get:o[r],enumerable:!0})},x=(a,o,r,c)=>{if(o&&typeof o=="object"||typeof o=="function")for(let e of n(o))!p.call(a,e)&&e!==r&&t(a,e,{get:()=>o[e],enumerable:!(c=l(o,e))||c.enumerable});return a};var f=a=>x(t({},"__esModule",{value:!0}),a);var m={};s(m,{aaa:()=>g});module.exports=f(m);var g=()=>{console.log("aaa")};0&&(module.exports={aaa});
+var t=Object.defineProperty;var s=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var m=Object.prototype.hasOwnProperty;var p=(e,o)=>{for(var n in o)t(e,n,{get:o[n],enumerable:!0})},x=(e,o,n,b)=>{if(o&&typeof o=="object"||typeof o=="function")for(let r of u(o))!m.call(e,r)&&r!==n&&t(e,r,{get:()=>o[r],enumerable:!(b=s(o,r))||b.enumerable});return e};var a=e=>x(t({},"__esModule",{value:!0}),e);var i={};p(i,{isEven:()=>c,isOdd:()=>d});module.exports=a(i);var c=e=>(e&1)===0,d=e=>(e&1)===1;0&&(module.exports={isEven,isOdd});
