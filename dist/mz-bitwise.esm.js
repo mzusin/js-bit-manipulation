@@ -5,4 +5,4 @@ https://github.com/mzusin/js-bit-manipulation
 MIT License      
 Copyright (c) 2023-present, Miriam Zusin       
 */
-var o=e=>(e&1)===0,r=e=>(e&1)===1;export{o as isEven,r as isOdd};
+var e=r=>(r&1)===0,n=r=>(r&1)===1,t=r=>{if(!Number.isInteger(r))throw new Error("Input must be an integer.");return r>>1},o=r=>{if(!Number.isInteger(r))throw new Error("Input must be an integer.");return r<<1};export{t as divideBy2,e as isEven,n as isOdd,o as multiplyBy2};

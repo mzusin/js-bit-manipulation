@@ -13,3 +13,25 @@ export const isEven = (num: number) : boolean  => {
 export const isOdd = (num: number) : boolean  => {
     return (num & 1) === 1;
 };
+
+/**
+ * It works only for integer numbers.
+ */
+export const divideBy2 = (num: number) : number => {
+    if (!Number.isInteger(num)) {
+        throw new Error('Input must be an integer.');
+    }
+
+    return num >> 1;
+};
+
+/**
+ * It works only for integer numbers.
+ */
+export const multiplyBy2 = (num: number) : number => {
+    if (!Number.isInteger(num)) {
+        throw new Error('Input must be an integer.');
+    }
+
+    return num << 1;
+};
