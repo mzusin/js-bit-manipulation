@@ -1,6 +1,7 @@
 # Bit Manipulation in JavaScript
 A collection of bit manipulation helpers written TypeScript.
 This repository is intended for learning bit manipulation in JavaScript/TypeScript.
+Each function has [Jest](https://jestjs.io/) unit tests.
 
 ## Functions List
 - `export const isEven: (num: number) => boolean;`
@@ -9,6 +10,7 @@ This repository is intended for learning bit manipulation in JavaScript/TypeScri
 - `export const multiplyBy2: (num: number) => number;`
 - `export const equals: (num1: number, num2: number) => boolean;`
 - `export const getLSB: (num: number) => number; // Get the least significant bit.` 
+- `export const removeLSB: (num: number) => number; // Remove the least significant bit.`
 
 
 ``` 

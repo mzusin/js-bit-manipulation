@@ -53,3 +53,10 @@ export const equals = (num1: number, num2: number) => {
 export const getLSB = (num: number) => {
     return (num & 1);
 };
+
+/**
+ * Remove the least significant bit.
+ */
+export const removeLSB = (num: number) => {
+    return (num >> 1);
+};
