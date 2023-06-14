@@ -17,6 +17,12 @@ describe('Bitwise', () => {
             expect(getBinaryString(-10)).toBe('11111111111111111111111111110110');
             expect(getBinaryString(-255)).toBe('11111111111111111111111100000001');
         });
+
+        it('throws an error for non-integer input', () => {
+            expect(() => getBinaryString(1.5)).toThrowError('Input must be an integer.');
+            expect(() => getBinaryString(-3.8)).toThrowError('Input must be an integer.');
+            expect(() => getBinaryString(NaN)).toThrowError('Input must be an integer.');
+        });
     });
 
     describe('isEven()', () => {

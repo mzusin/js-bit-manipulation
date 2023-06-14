@@ -1,4 +1,11 @@
+/**
+ * It works only for integer numbers.
+ */
 export const getBinaryString = (num: number) => {
+    if (!Number.isInteger(num)) {
+        throw new Error('Input must be an integer.');
+    }
+
     return (num >>> 0).toString(2);
 };
 
