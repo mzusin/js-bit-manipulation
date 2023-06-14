@@ -1,5 +1,5 @@
 # Bit Manipulation in JavaScript
-A collection of bit manipulation helpers written TypeScript.
+A collection of bit manipulation helpers written in TypeScript.
 
 This repository is intended for learning bit manipulation in JavaScript/TypeScript.
 You are welcome to check the [source code](https://github.com/mzusin/js-bit-manipulation/tree/main/src/core) of each function and the [unit tests](https://github.com/mzusin/js-bit-manipulation/tree/main/test).
