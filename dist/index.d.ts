@@ -1,4 +1,5 @@
 declare module 'mz-bitwise' {
+    export const getBinaryString: (num: number) => string;
     export const isEven: (num: number) => boolean;
     export const isOdd: (num: number) => boolean;
     export const divideBy2: (num: number) => number;

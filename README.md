@@ -1,9 +1,11 @@
 # Bit Manipulation in JavaScript
 A collection of bit manipulation helpers written TypeScript.
+
 This repository is intended for learning bit manipulation in JavaScript/TypeScript.
-Each function has [Jest](https://jestjs.io/) unit tests.
+You are welcome to check the [source code](https://github.com/mzusin/js-bit-manipulation/tree/main/src/core) of each function and the [unit tests](https://github.com/mzusin/js-bit-manipulation/tree/main/test).
 
 ## Functions List
+- `export const getBinaryString: (num: number) => string;`
 - `export const isEven: (num: number) => boolean;`
 - `export const isOdd: (num: number) => boolean;`
 - `export const divideBy2: (num: number) => number;`

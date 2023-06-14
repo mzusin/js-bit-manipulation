@@ -1,6 +1,23 @@
-import { isEven, isOdd, divideBy2, multiplyBy2, equals } from '../src/core/bitwise';
+import { isEven, isOdd, divideBy2, multiplyBy2, equals, getBinaryString } from '../src/core/bitwise';
 
 describe('Bitwise', () => {
+
+    describe('getBinaryString()', () => {
+        it('returns the correct binary string for positive numbers', () => {
+            expect(getBinaryString(0)).toBe('0');
+            expect(getBinaryString(1)).toBe('1');
+            expect(getBinaryString(2)).toBe('10');
+            expect(getBinaryString(10)).toBe('1010');
+            expect(getBinaryString(255)).toBe('11111111');
+        });
+
+        it('returns the correct binary string for negative numbers', () => {
+            expect(getBinaryString(-1)).toBe('11111111111111111111111111111111');
+            expect(getBinaryString(-2)).toBe('11111111111111111111111111111110');
+            expect(getBinaryString(-10)).toBe('11111111111111111111111111110110');
+            expect(getBinaryString(-255)).toBe('11111111111111111111111100000001');
+        });
+    });
 
     describe('isEven()', () => {
         it('returns true for even numbers', () => {

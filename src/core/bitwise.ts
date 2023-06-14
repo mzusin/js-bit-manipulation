@@ -1,3 +1,7 @@
+export const getBinaryString = (num: number) => {
+    return (num >>> 0).toString(2);
+};
+
 /**
  * 1. All even numbers have their least significant bit (LSB) as 0.
  * 2. 0 AND 1 = 0
