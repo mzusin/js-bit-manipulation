@@ -9,9 +9,11 @@ Each function has [Jest](https://jestjs.io/) unit tests.
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
 - `export const equals: (num1: number, num2: number) => boolean;`
-- `export const getLSB: (num: number) => number; // Get the least significant bit.` 
-- `export const removeLSB: (num: number) => number; // Remove the least significant bit.`
 
+## Least Significant Bit (LSB)
+- `export const getLSB: (num: number) => number;`
+- `export const removeLSB: (num: number) => number;`
+- `export declare const setLSB: (num: number) => number;`
 
 ``` 
        (                      (    (         
