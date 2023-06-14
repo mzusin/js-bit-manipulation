@@ -6,6 +6,7 @@ A collection of bit manipulation helpers written TypeScript.
 - `export const isOdd: (num: number) => boolean;`
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
+- `export const equals: (num1: number, num2: number) => boolean;`
 
 
 ``` 

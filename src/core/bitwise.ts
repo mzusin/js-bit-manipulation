@@ -22,7 +22,7 @@ export const divideBy2 = (num: number) : number => {
         throw new Error('Input must be an integer.');
     }
 
-    return num >> 1;
+    return num >> 1; // we can also use >>>
 };
 
 /**
@@ -34,4 +34,15 @@ export const multiplyBy2 = (num: number) : number => {
     }
 
     return num << 1;
+};
+
+/**
+ * It works only for integer numbers.
+ */
+export const equals = (num1: number, num2: number) => {
+    if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
+        throw new Error('Input must be an integer.');
+    }
+
+    return (num1 ^ num2) === 0;
 };

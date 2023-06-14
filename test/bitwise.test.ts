@@ -1,4 +1,4 @@
-import { isEven, isOdd, divideBy2, multiplyBy2 } from '../src/core/bitwise';
+import { isEven, isOdd, divideBy2, multiplyBy2, equals } from '../src/core/bitwise';
 
 describe('Bitwise', () => {
 
@@ -85,6 +85,27 @@ describe('Bitwise', () => {
         it('throws an error for non-integer inputs', () => {
             expect(() => multiplyBy2(2.5)).toThrow('Input must be an integer.');
             expect(() => multiplyBy2(NaN)).toThrow('Input must be an integer.');
+        });
+    });
+
+    describe('equals()', () => {
+        it('returns true for equal numbers', () => {
+            expect(equals(0, 0)).toBe(true);
+            expect(equals(2, 2)).toBe(true);
+            expect(equals(-5, -5)).toBe(true);
+            expect(equals(10, 10)).toBe(true);
+        });
+
+        it('returns false for unequal numbers', () => {
+            expect(equals(1, 2)).toBe(false);
+            expect(equals(10, -5)).toBe(false);
+            expect(equals(10, 20)).toBe(false);
+        });
+
+        it('throws an error for non-integer inputs', () => {
+            expect(() => equals(2.5, 2.5)).toThrow('Input must be an integer.');
+            expect(() => equals(2, 2.5)).toThrow('Input must be an integer.');
+            expect(() => equals(2.5, 2)).toThrow('Input must be an integer.');
         });
     });
 });
