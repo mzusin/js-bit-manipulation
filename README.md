@@ -21,6 +21,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## Most Significant Bit (MSB)
 - `export const getMSB: (num: number) => number;`
 - `export const setMSB: (num: number) => number;`
+- `export const unsetMSB: (num: number) => number;`
 
 ``` 
        (                      (    (         
