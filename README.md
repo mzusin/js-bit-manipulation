@@ -1,4 +1,4 @@
-# Bit Manipulation in JavaScript
+# 🌟 Bit Manipulation in JavaScript 🌟
 A collection of bit manipulation helpers written in TypeScript.
 
 This repository is intended for learning bit manipulation in JavaScript/TypeScript.
