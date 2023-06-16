@@ -10,28 +10,6 @@ export const getBinaryString = (num: number) => {
 };
 
 /**
- * It works only for integer numbers.
- */
-export const divideBy2 = (num: number) : number => {
-    if (!Number.isInteger(num)) {
-        throw new Error('Input must be an integer.');
-    }
-
-    return num >> 1; // we can also use >>>
-};
-
-/**
- * It works only for integer numbers.
- */
-export const multiplyBy2 = (num: number) : number => {
-    if (!Number.isInteger(num)) {
-        throw new Error('Input must be an integer.');
-    }
-
-    return num << 1;
-};
-
-/**
  * This function converts a given number to an unsigned 32-bit integer representation.
  * `>>> 0` forces the input number to be treated as a 32-bit unsigned integer.
  * By applying the `>>> 0` operation, the function effectively discards any sign bit information
@@ -39,12 +17,4 @@ export const multiplyBy2 = (num: number) : number => {
  */
 export const convertToUInt32 = (num: number) => {
     return num >>> 0;
-};
-
-/**
- * Covert positive number to negative, or negative number to positive.
- * Two's Complement Format: `-num = ~(num - 1)`
- */
-export const toggleSign = (num: number) => {
-    return (~num) + 1;
 };
