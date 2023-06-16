@@ -29,4 +29,5 @@ declare module 'mz-bitwise' {
     // Bit
     export const setBitAtPosition: (num: number, n: number) => number;
     export const unsetBitAtPosition: (num: number, n: number) => number;
+    export const toggleBitAtPosition: (num: number, n: number) => number;
 }

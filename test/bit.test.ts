@@ -1,4 +1,4 @@
-import { setBitAtPosition, unsetBitAtPosition } from '../src/core/bit';
+import { setBitAtPosition, unsetBitAtPosition, toggleBitAtPosition } from '../src/core/bit';
 
 describe('Bit', () => {
 
@@ -48,4 +48,26 @@ describe('Bit', () => {
         });
     });
 
+    describe('toggleBitAtPosition()', () => {
+        it('should toggle the bit at position 0', () => {
+            const num = 1; // Binary: 0001
+            const n = 0;
+            const result = toggleBitAtPosition(num, n); // Binary: 0000 (0 in decimal)
+            expect(result).toEqual(0);
+        });
+
+        it('should toggle the bit at position 1', () => {
+            const num = 7; // Binary: 0111
+            const n = 1;
+            const result = toggleBitAtPosition(num, n); // Binary: 0101 (5 in decimal)
+            expect(result).toEqual(5);
+        });
+
+        it('should toggle the bit at position 3 in a negative number', () => {
+            const num = -10; // Binary: 11110110
+            const n = 3;
+            const result = toggleBitAtPosition(num, n); // Binary: 11111110 (-2 in decimal)
+            expect(result).toEqual(-2);
+        });
+    });
 });

@@ -49,6 +49,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## A Bit at Nth Position 🧩
 - `export const setBitAtPosition: (num: number, n: number) => number;`
 - `export const unsetBitAtPosition: (num: number, n: number) => number;`
+- `export const toggleBitAtPosition: (num: number, n: number) => number;`
 
 ## Practice Problems
 - [Bit Manipulation on leetcode.com](https://leetcode.com/tag/bit-manipulation/)
