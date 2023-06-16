@@ -12,3 +12,10 @@ export const toggleBitAtPosition = (num: number, n: number) => {
     const mask = 1 << n; // Create a mask with the nth bit set to 1 and all other bits set to 0
     return num ^ mask; // Toggle the nth bit in num
 };
+
+/**
+ * Invert (flip) every bit of a number.
+ */
+export const invertBits = (num: number) => {
+    return ~num;
+};

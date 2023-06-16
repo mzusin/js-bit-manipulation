@@ -1,4 +1,4 @@
-import { setBitAtPosition, unsetBitAtPosition, toggleBitAtPosition } from '../src/core/bit';
+import { setBitAtPosition, unsetBitAtPosition, toggleBitAtPosition, invertBits } from '../src/core/bit';
 
 describe('Bit', () => {
 
@@ -68,6 +68,26 @@ describe('Bit', () => {
             const n = 3;
             const result = toggleBitAtPosition(num, n); // Binary: 11111110 (-2 in decimal)
             expect(result).toEqual(-2);
+        });
+    });
+
+    describe('invertBits()', () => {
+        it('should invert every bit of a positive number', () => {
+            const num = 42; // Binary: 101010
+            const result = invertBits(num); // Binary: 010101 (-43 in decimal)
+            expect(result).toEqual(-43);
+        });
+
+        it('should invert every bit of a negative number', () => {
+            const num = -10;
+            const result = invertBits(num);
+            expect(result).toEqual(9);
+        });
+
+        it('should invert every bit of zero', () => {
+            const num = 0; // Binary: 000000
+            const result = invertBits(num); // Binary: 111111 (-1 in decimal)
+            expect(result).toEqual(-1);
         });
     });
 });
