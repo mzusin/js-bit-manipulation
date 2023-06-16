@@ -4,7 +4,15 @@ A collection of bit manipulation helpers written in TypeScript.
 This repository is intended for learning bit manipulation in JavaScript/TypeScript.
 You are welcome to check the [source code](https://github.com/mzusin/js-bit-manipulation/tree/main/src/core) of each function and the [unit tests](https://github.com/mzusin/js-bit-manipulation/tree/main/test).
 
-## Points ️📌
+## Table of Contents
+- [Points](#points-)
+- [Functions List](#functions-list-)
+- [Predicates](#predicates-)
+- [Least Significant Bit (LSB)](#least-significant-bit-lsb-)
+- [Most Significant Bit (MSB)](#most-significant-bit-msb-)
+- [Practice Problems](#practice-problems)
+
+## Points 📌
 - JavaScript stores numbers as 64 bits floating point numbers, but all bitwise operations are performed on **32 bits binary numbers**.
 - Before a bitwise operation is performed, JavaScript converts numbers to **32 bits signed integers**.
 - After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers.
@@ -31,6 +39,9 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const getMSB: (num: number) => number;`
 - `export const setMSB: (num: number) => number;`
 - `export const unsetMSB: (num: number) => number;`
+
+## Practice Problems
+- [Bit Manipulation on leetcode.com](https://leetcode.com/tag/bit-manipulation/)
 
 --------------
 
