@@ -117,4 +117,5 @@ describe('Bit', () => {
             expect(isSet).toBe(true);
         });
     });
+
 });

@@ -67,3 +67,22 @@ export const subtraction = (num1: number, num2: number) => {
     // Perform addition of num1 and the two's complement of num2
     return addition(num1, num2);
 };
+
+export const multiplication = (num1: number, num2: number) => {
+    let result = 0;
+
+    while (num2 !== 0) {
+        // If the least significant bit of num2 is 1, add num1 to the result
+        if ((num2 & 1) === 1) {
+            result = addition(result, num1);
+        }
+
+        // Right shift num2 by 1 bit
+        num2 >>= 1;
+
+        // Left shift num1 by 1 bit
+        num1 <<= 1;
+    }
+
+    return result;
+};
