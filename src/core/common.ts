@@ -31,4 +31,12 @@ export const swap = (num1: number, num2: number) => {
     num2 ^= num1;
     num1 ^= num2;
     return [num1, num2];
+
+    /*
+    OR:
+    ----------------------
+    a = a + b; // a+b, b
+    b = a - b; // a+b, a+b-b=a
+    a = a - b; // a+b-a=b
+     */
 };
