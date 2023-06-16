@@ -6,7 +6,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Table of Contents
 - [Points](#points-)
-- [Functions List](#functions-list-)
+- [Functions List](#functions-list-️)
 - [Predicates](#predicates-)
 - [Least Significant Bit (LSB)](#least-significant-bit-lsb-)
 - [Most Significant Bit (MSB)](#most-significant-bit-msb-)
