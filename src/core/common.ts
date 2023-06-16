@@ -9,6 +9,10 @@ export const getBinaryString = (num: number) => {
     return (num >>> 0).toString(2);
 };
 
+export const parseBinaryString = (str: string) : number => {
+    return parseInt(str, 2);
+};
+
 /**
  * This function converts a given number to an unsigned 32-bit integer representation.
  * `>>> 0` forces the input number to be treated as a 32-bit unsigned integer.

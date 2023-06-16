@@ -20,6 +20,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Functions List ✍️
 - `export const getBinaryString: (num: number) => string;`
+- `export const parseBinaryString: (str: string) => number;`
 - `export const convertToUInt32: (num: number) => number;`
 
 ## Math 💡

@@ -1,4 +1,4 @@
-import { getBinaryString, convertToUInt32 } from '../src/core/common';
+import { getBinaryString, parseBinaryString, convertToUInt32 } from '../src/core/common';
 
 describe('Common', () => {
 
@@ -22,6 +22,25 @@ describe('Common', () => {
             expect(() => getBinaryString(1.5)).toThrowError('Input must be an integer.');
             expect(() => getBinaryString(-3.8)).toThrowError('Input must be an integer.');
             expect(() => getBinaryString(NaN)).toThrowError('Input must be an integer.');
+        });
+    });
+
+    describe('parseBinaryString()', () => {
+
+        it('0 ---> 0', () => {
+            expect(parseBinaryString('101010')).toEqual(42);
+        });
+
+        it('101010 ---> 42', () => {
+            expect(parseBinaryString('101010')).toEqual(42);
+        });
+
+        it('11111111111111111111111111010110 ---> 4294967254', () => {
+            expect(parseBinaryString('11111111111111111111111111010110')).toEqual(4294967254);
+        });
+
+        it('10102 ---> 10', () => {
+            expect(parseBinaryString('10102')).toEqual(10);
         });
     });
 

@@ -1,5 +1,6 @@
 declare module 'mz-bitwise' {
     export const getBinaryString: (num: number) => string;
+    export const parseBinaryString: (str: string) => number;
     export const convertToUInt32: (num: number) => number;
 
     // Math
