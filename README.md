@@ -23,7 +23,6 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const convertToUInt32: (num: number) => number;`
 - `export const divideBy2: (num: number) => number;`
 - `export const multiplyBy2: (num: number) => number;`
-- `export const multiplyBy2: (num: number) => number;`
 - `export const toggleSign: (num: number) => number;`
 
 ## Predicates 🔬
