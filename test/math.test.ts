@@ -1,7 +1,7 @@
 import {
     divideBy2, multiplyBy2, toggleSign,
     multiplyBy2PowerN, divideBy2PowerN,
-    addition,
+    addition, subtraction,
 } from '../src/core/math';
 
 describe('Math', () => {
@@ -182,6 +182,36 @@ describe('Math', () => {
             const num2 = -75;
             const result = addition(num1, num2);
             expect(result).toEqual(-125);
+        });
+    });
+
+    describe('subtraction()', () => {
+        it('should correctly subtract two positive numbers', () => {
+            const num1 = 10;
+            const num2 = 7;
+            const result = subtraction(num1, num2);
+            expect(result).toEqual(3);
+        });
+
+        it('should correctly handle zero as one of the operands', () => {
+            const num1 = 0;
+            const num2 = 5;
+            const result = subtraction(num1, num2);
+            expect(result).toEqual(-5);
+        });
+
+        it('should correctly handle negative and positive numbers', () => {
+            const num1 = -10;
+            const num2 = 5;
+            const result = subtraction(num1, num2);
+            expect(result).toEqual(-15);
+        });
+
+        it('should correctly handle negative numbers with carry', () => {
+            const num1 = -50;
+            const num2 = -25;
+            const result = subtraction(num1, num2);
+            expect(result).toEqual(-25);
         });
     });
 });

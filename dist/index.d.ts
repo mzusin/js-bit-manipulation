@@ -10,6 +10,7 @@ declare module 'mz-bitwise' {
     export const multiplyBy2PowerN: (num: number, n: number) => number;
     export const divideBy2PowerN: (num: number, n: number) => number;
     export const addition: (num1: number, num2: number) => number;
+    export const subtraction: (num1: number, num2: number) => number;
 
     // Predicates
     export const isEven: (num: number) => boolean;

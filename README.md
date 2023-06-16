@@ -30,6 +30,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const divideBy2PowerN: (num: number, n: number) => number;`
 - `export const toggleSign: (num: number) => number;`
 - `export const addition: (num1: number, num2: number) => number;`
+- `export const subtraction: (num1: number, num2: number) => number;`
 
 ## Predicates 🔬
 - `export const isEven: (num: number) => boolean;`

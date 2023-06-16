@@ -59,3 +59,11 @@ export const addition = (num1: number, num2: number) => {
     }
     return num1;
 };
+
+export const subtraction = (num1: number, num2: number) => {
+    // Perform two's complement of num2
+    num2 = ~num2 + 1;
+
+    // Perform addition of num1 and the two's complement of num2
+    return addition(num1, num2);
+};
