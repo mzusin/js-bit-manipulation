@@ -86,3 +86,4 @@ export const multiplication = (num1: number, num2: number) => {
 
     return result;
 };
+

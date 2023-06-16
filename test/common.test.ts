@@ -1,4 +1,4 @@
-import { getBinaryString, parseBinaryString, convertToUInt32 } from '../src/core/common';
+import { getBinaryString, parseBinaryString, convertToUInt32, swap } from '../src/core/common';
 
 describe('Common', () => {
 
@@ -63,6 +63,40 @@ describe('Common', () => {
 
         it('returns the same value for zero', () => {
             expect(convertToUInt32(0)).toBe(0);
+        });
+    });
+
+    describe('swap()', () => {
+        it('should correctly swap two positive numbers', () => {
+            const num1 = 5;
+            const num2 = 10;
+            const [result1, result2] = swap(num1, num2);
+            expect(result1).toEqual(10);
+            expect(result2).toEqual(5);
+        });
+
+        it('should correctly swap two negative numbers', () => {
+            const num1 = -5;
+            const num2 = -10;
+            const [result1, result2] = swap(num1, num2);
+            expect(result1).toEqual(-10);
+            expect(result2).toEqual(-5);
+        });
+
+        it('should correctly swap a positive and a negative number', () => {
+            const num1 = 5;
+            const num2 = -10;
+            const [result1, result2] = swap(num1, num2);
+            expect(result1).toEqual(-10);
+            expect(result2).toEqual(5);
+        });
+
+        it('should correctly swap two zero values', () => {
+            const num1 = 0;
+            const num2 = 0;
+            const [result1, result2] = swap(num1, num2);
+            expect(result1).toEqual(0);
+            expect(result2).toEqual(0);
         });
     });
 

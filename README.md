@@ -22,6 +22,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const getBinaryString: (num: number) => string;`
 - `export const parseBinaryString: (str: string) => number;`
 - `export const convertToUInt32: (num: number) => number;`
+- `export const swap: (num1: number, num2: number) => number[];`
 
 ## Math 💡
 - `export const multiplyBy2: (num: number) => number;`

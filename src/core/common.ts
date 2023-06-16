@@ -22,3 +22,13 @@ export const parseBinaryString = (str: string) : number => {
 export const convertToUInt32 = (num: number) => {
     return num >>> 0;
 };
+
+/**
+ * [a, b] = swap(a, b);
+ */
+export const swap = (num1: number, num2: number) => {
+    num1 ^= num2;
+    num2 ^= num1;
+    num1 ^= num2;
+    return [num1, num2];
+};
