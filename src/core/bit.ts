@@ -19,3 +19,8 @@ export const toggleBitAtPosition = (num: number, n: number) => {
 export const invertBits = (num: number) => {
     return ~num;
 };
+
+export const isBitSetAtPosition = (num: number, n: number) => {
+    const mask = 1 << n; // Create a mask with only the nth bit set to 1
+    return (num & mask) !== 0; // Check if the bitwise AND result is non-zero
+};

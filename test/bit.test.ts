@@ -1,4 +1,8 @@
-import { setBitAtPosition, unsetBitAtPosition, toggleBitAtPosition, invertBits } from '../src/core/bit';
+import {
+    setBitAtPosition, unsetBitAtPosition,
+    toggleBitAtPosition, invertBits,
+    isBitSetAtPosition,
+} from '../src/core/bit';
 
 describe('Bit', () => {
 
@@ -88,6 +92,29 @@ describe('Bit', () => {
             const num = 0; // Binary: 000000
             const result = invertBits(num); // Binary: 111111 (-1 in decimal)
             expect(result).toEqual(-1);
+        });
+    });
+
+    describe('isBitSetAtPosition()', () => {
+        it('should return true for a set bit', () => {
+            const num = 5; // Binary: 0101
+            const n = 2;
+            const isSet = isBitSetAtPosition(num, n); // The 2nd bit is set (true)
+            expect(isSet).toBe(true);
+        });
+
+        it('should return false for an unset bit', () => {
+            const num = 7; // Binary: 0111
+            const n = 1;
+            const isSet = isBitSetAtPosition(num, n); // The 1st bit is unset (false)
+            expect(isSet).toBe(true);
+        });
+
+        it('should handle negative numbers', () => {
+            const num = -10;
+            const n = 4; // Check the 4th bit
+            const isSet = isBitSetAtPosition(num, n); // The 4th bit is set (true)
+            expect(isSet).toBe(true);
         });
     });
 });

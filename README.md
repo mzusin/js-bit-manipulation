@@ -51,6 +51,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const unsetBitAtPosition: (num: number, n: number) => number;`
 - `export const toggleBitAtPosition: (num: number, n: number) => number;`
 - `export const invertBits: (num: number) => number;`
+- `export const isBitSetAtPosition: (num: number, n: number) => boolean;`
 
 ## Practice Problems
 - [Bit Manipulation on leetcode.com](https://leetcode.com/tag/bit-manipulation/)
