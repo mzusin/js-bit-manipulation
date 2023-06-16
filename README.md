@@ -14,7 +14,9 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Points 📌
 - [Two's Complement Format](https://github.com/mzusin/js-bit-manipulation/blob/main/README/Two's%20Complement%20Format.md)
+- [AND/OR properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/README/AND-OR.md)
 - [XOR properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/README/XOR.md)
+- [NOT properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/README/NOT.md)
 
 ## Functions List ✍️
 - `export const getBinaryString: (num: number) => string;`

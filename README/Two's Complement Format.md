@@ -5,6 +5,7 @@
 - After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers.
 - JavaScript binary numbers are stored in [two's complement format](https://en.wikipedia.org/wiki/Two%27s_complement). 
 - This means that `-num = ~(num - 1)`.
+- When [the most significant (MSB)](https://en.wikipedia.org/wiki/Most_significant_bit) bit is **1**, the number is signed as **negative**; and when the most significant bit is **0** the number is signed as **positive**.
 
 ## `0 === ~(-1)`
 * 0   in binary is 00000000000000000000000000000000
