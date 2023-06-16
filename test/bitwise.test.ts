@@ -1,4 +1,7 @@
-import { divideBy2, multiplyBy2, getBinaryString, convertToUInt32 } from '../src/core/bitwise';
+import {
+    divideBy2, multiplyBy2, getBinaryString,
+    convertToUInt32, toggleSign,
+} from '../src/core/bitwise';
 
 describe('Bitwise', () => {
 
@@ -94,6 +97,26 @@ describe('Bitwise', () => {
         it('throws an error for non-integer inputs', () => {
             expect(() => multiplyBy2(2.5)).toThrow('Input must be an integer.');
             expect(() => multiplyBy2(NaN)).toThrow('Input must be an integer.');
+        });
+    });
+
+    describe('toggleSign()', () => {
+        it('should convert a positive number to negative', () => {
+            const num = 5;
+            const result = toggleSign(num);
+            expect(result).toEqual(-num);
+        });
+
+        it('should convert a negative number to positive', () => {
+            const num = -10;
+            const result = toggleSign(num);
+            expect(result).toEqual(-num);
+        });
+
+        it('should return 0 when input is 0', () => {
+            const num = 0;
+            const result = toggleSign(num);
+            expect(result).toEqual(0);
         });
     });
 

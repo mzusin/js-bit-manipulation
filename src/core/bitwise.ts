@@ -40,3 +40,11 @@ export const multiplyBy2 = (num: number) : number => {
 export const convertToUInt32 = (num: number) => {
     return num >>> 0;
 };
+
+/**
+ * Covert positive number to negative, or negative number to positive.
+ * Two's Complement Format: `-num = ~(num - 1)`
+ */
+export const toggleSign = (num: number) => {
+    return (~num) + 1;
+};
