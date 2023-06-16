@@ -22,9 +22,11 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const getBinaryString: (num: number) => string;`
 - `export const convertToUInt32: (num: number) => number;`
 
-## Math
-- `export const divideBy2: (num: number) => number;`
+## Math 💡
 - `export const multiplyBy2: (num: number) => number;`
+- `export const multiplyBy2PowerN: (num: number, n: number) => number;`
+- `export const divideBy2: (num: number) => number;`
+- `export const divideBy2PowerN: (num: number, n: number) => number;`
 - `export const toggleSign: (num: number) => number;`
 
 ## Predicates 🔬
