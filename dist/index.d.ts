@@ -24,4 +24,7 @@ declare module 'mz-bitwise' {
     export const getMSB: (num: number) => number;
     export const setMSB: (num: number) => number;
     export const unsetMSB: (num: number) => number;
+
+    // Bit
+    export const setBitAtPosition: (num: number, n: number) => number;
 }
