@@ -1,6 +1,7 @@
 import {
     divideBy2, multiplyBy2, toggleSign,
     multiplyBy2PowerN, divideBy2PowerN,
+    addition,
 } from '../src/core/math';
 
 describe('Math', () => {
@@ -133,4 +134,54 @@ describe('Math', () => {
         });
     });
 
+    describe('addition()', () => {
+        it('should correctly add two positive numbers', () => {
+            const num1 = 5;
+            const num2 = 7;
+            const result = addition(num1, num2);
+            expect(result).toEqual(12);
+        });
+
+        it('should correctly handle zero as one of the operands', () => {
+            const num1 = 0;
+            const num2 = 10;
+            const result = addition(num1, num2);
+            expect(result).toEqual(10);
+        });
+
+        it('should correctly handle negative numbers', () => {
+            const num1 = -5;
+            const num2 = -7;
+            const result = addition(num1, num2);
+            expect(result).toEqual(-12);
+        });
+
+        it('should correctly add two large positive numbers', () => {
+            const num1 = 123456789;
+            const num2 = 987654321;
+            const result = addition(num1, num2);
+            expect(result).toEqual(1111111110);
+        });
+
+        it('should correctly handle negative and positive numbers', () => {
+            const num1 = -10;
+            const num2 = 15;
+            const result = addition(num1, num2);
+            expect(result).toEqual(5);
+        });
+
+        it('should correctly handle zero as both operands', () => {
+            const num1 = 0;
+            const num2 = 0;
+            const result = addition(num1, num2);
+            expect(result).toEqual(0);
+        });
+
+        it('should correctly handle negative numbers with carry', () => {
+            const num1 = -50;
+            const num2 = -75;
+            const result = addition(num1, num2);
+            expect(result).toEqual(-125);
+        });
+    });
 });
