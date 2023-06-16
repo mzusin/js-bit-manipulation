@@ -13,9 +13,6 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - [Practice Problems](#practice-problems)
 
 ## Points 📌
-- JavaScript stores numbers as 64 bits floating point numbers, but all bitwise operations are performed on **32 bits binary numbers**.
-- Before a bitwise operation is performed, JavaScript converts numbers to **32 bits signed integers**.
-- After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers.
 - [Two's Complement Format](https://github.com/mzusin/js-bit-manipulation/blob/main/README/Two's%20Complement%20Format.md)
 - [XOR properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/README/XOR.md)
 
@@ -30,7 +27,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const isOdd: (num: number) => boolean;`
 - `export const isEquals: (num1: number, num2: number) => boolean;`
 
-## Least Significant Bit (LSB) 🤓
+## Least Significant Bit (LSB) ⚗️
 - `export const getLSB: (num: number) => number;`
 - `export const removeLSB: (num: number) => number;`
 - `export const setLSB: (num: number) => number;`
