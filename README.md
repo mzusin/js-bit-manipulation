@@ -17,7 +17,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - Before a bitwise operation is performed, JavaScript converts numbers to **32 bits signed integers**.
 - After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers.
 - JavaScript binary numbers are stored in [two's complement format](https://en.wikipedia.org/wiki/Two%27s_complement). This means that `-num = ~(num - 1)`.
-- [XOR properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/src/core/xor.ts)
+- [XOR properties.](https://github.com/mzusin/js-bit-manipulation/blob/main/README/XOR.md)
 
 ## Functions List ✍️
 - `export const getBinaryString: (num: number) => string;`
