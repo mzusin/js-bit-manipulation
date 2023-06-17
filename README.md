@@ -60,6 +60,11 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## Practice Problems
 - [Bit Manipulation on leetcode.com](https://leetcode.com/tag/bit-manipulation/)
 
+## LeetCode Solutions
+Solutions to LeetCode problems in JavaScript using bit manipulations approach only.
+- [1684. Count the Number of Consistent Strings
+  ](https://leetcode.com/problems/count-the-number-of-consistent-strings/solutions/3646136/javascript-bit-manipulation-with-comments-9982/)
+
 --------------
 
 ``` 
