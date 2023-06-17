@@ -42,7 +42,6 @@ export const divideBy2PowerN = (num: number, n: number) : number => {
     return num >> n; // we can also use >>>
 };
 
-
 /**
  * Covert positive number to negative, or negative number to positive.
  * Two's Complement Format: `-num = ~(num - 1)`
@@ -86,4 +85,5 @@ export const multiplication = (num1: number, num2: number) => {
 
     return result;
 };
+
 

@@ -40,3 +40,10 @@ export const swap = (num1: number, num2: number) => {
     a = a - b; // a+b-a=b
      */
 };
+
+export const xor = (num1: number, num2: number) => {
+    return (num1 | num2) - (num1 & num2);
+    // return (num1 | num2) & (~num1 | ~num2);
+    // return (num1 & (~num1)) | ((~num1) & num1);
+    // return (num1 + num2 - (2 * (num1 & num2)));
+};

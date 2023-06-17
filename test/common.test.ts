@@ -1,4 +1,4 @@
-import { getBinaryString, parseBinaryString, convertToUInt32, swap } from '../src/core/common';
+import { getBinaryString, parseBinaryString, convertToUInt32, swap, xor } from '../src/core/common';
 
 describe('Common', () => {
 
@@ -100,4 +100,43 @@ describe('Common', () => {
         });
     });
 
+
+    describe('xor()', () => {
+        it('0 ^ 0', () => {
+            expect(xor(0, 0)).toBe(0 ^ 0);
+        });
+
+        it('0 ^ 1', () => {
+            expect(xor(0, 1)).toBe(0 ^ 1);
+            expect(xor(1, 0)).toBe(1 ^ 0);
+        });
+
+        it('1 ^ 1', () => {
+            expect(xor(1, 1)).toBe(1 ^ 1);
+        });
+
+        it('2 ^ 3', () => {
+            expect(xor(2, 3)).toBe(2 ^ 3);
+        });
+
+        it('0 ^ 5', () => {
+            expect(xor(0, 5)).toBe(0 ^ 5);
+        });
+
+        it('6 ^ 9', () => {
+            expect(xor(6, 9)).toBe(6 ^ 9);
+        });
+
+        it('12 ^ 0', () => {
+            expect(xor(12, 0)).toBe(12 ^ 0);
+        });
+
+        it('0 ^ -3', () => {
+            expect(xor(0, -3)).toBe(0 ^ -3);
+        });
+
+        it('9 ^ 12', () => {
+            expect(xor(9, 12)).toBe(9 ^ 12);
+        });
+    });
 });
