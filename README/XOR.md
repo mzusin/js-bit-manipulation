@@ -30,3 +30,12 @@ A ^ (B + C) = (A ^ B) + (A ^ C)
 ## XOR Equation
 Equation like `a = b ^ x` or `a = x ^ b` can be solved like: `x = a ^ b`
 
+## Alternative XOR Implementations
+
+```
+num1 ^ num2 = (num1 | num2) - (num1 & num2);
+num1 ^ num2 = (num1 | num2) & (~num1 | ~num2);
+num1 ^ num2 = (num1 & (~num1)) | ((~num1) & num1);
+num1 ^ num2 = (num1 + num2 - (2 * (num1 & num2)));
+```
+
