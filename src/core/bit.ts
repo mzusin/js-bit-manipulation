@@ -24,3 +24,27 @@ export const isBitSetAtPosition = (num: number, n: number) => {
     const mask = 1 << n; // Create a mask with only the nth bit set to 1
     return (num & mask) !== 0; // Check if the bitwise AND result is non-zero
 };
+
+export const countSetBits = (num: number) => {
+    let count = 0;
+
+    while(num > 0){
+        count += num & 1;
+        num >>= 1;
+    }
+
+    return count;
+};
+
+export const countUnsetBits = (num: number) => {
+    if(num === 0) return 1;
+
+    let count = 0;
+
+    while(num > 0){
+        if((num & 1) === 0) count ++;
+        num >>= 1;
+    }
+
+    return count;
+};

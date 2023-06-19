@@ -36,6 +36,8 @@ declare module 'mz-bitwise' {
     export const toggleBitAtPosition: (num: number, n: number) => number;
     export const invertBits: (num: number) => number;
     export const isBitSetAtPosition: (num: number, n: number) => boolean;
+    export const countSetBits: (num: number) => number;
+    export const countUnsetBits: (num: number) => number;
 
     // String
     export const getCharCodeSmallEn: (text: string, index: number) => number;
