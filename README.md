@@ -6,9 +6,10 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Table of Contents
 - [Points](#points-)
-- [Functions List](#functions-list-️)
+- [Common](#common-️)
+- [Math](#math-️)
 - [Predicates](#predicates-)
-- [Least Significant Bit (LSB)](#least-significant-bit-lsb-)
+- [Least Significant Bit (LSB)](#least-significant-bit-lsb-%EF%B8%8F)
 - [Most Significant Bit (MSB)](#most-significant-bit-msb-)
 - [Working with bits](#working-with-bits-)
 - [Masks](#masks-)
@@ -21,7 +22,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - [XOR properties](https://github.com/mzusin/js-bit-manipulation/blob/main/README/XOR.md)
 - [NOT properties](https://github.com/mzusin/js-bit-manipulation/blob/main/README/NOT.md)
 
-## Functions List ✍️
+## Common ✍️
 - `export const getBinaryString: (num: number) => string;`
 - `export const parseBinaryString: (str: string) => number;`
 - `export const convertToUInt32: (num: number) => number;`
