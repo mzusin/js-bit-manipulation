@@ -67,6 +67,7 @@ Solutions to LeetCode problems in JavaScript using bit manipulations approach on
 - [1684. Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/solutions/3646136/javascript-bit-manipulation-with-comments-9982/)
 - [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/3649410/javascript-bit-manipulation/)
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/solutions/3657019/javascript-bit-manipulation/)
+- [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/solutions/3660282/javascript-bit-manipulation/)
 
 --------------
 
