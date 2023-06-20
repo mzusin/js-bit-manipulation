@@ -10,7 +10,10 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - [Predicates](#predicates-)
 - [Least Significant Bit (LSB)](#least-significant-bit-lsb-)
 - [Most Significant Bit (MSB)](#most-significant-bit-msb-)
+- [Working with bits](#working-with-bits-)
+- [Masks](#masks-)
 - [Practice Problems](#practice-problems)
+- [LeetCode Solutions](#leetcode-solutions)
 
 ## Points 📌
 - [Two's Complement Format](https://github.com/mzusin/js-bit-manipulation/blob/main/README/Two's%20Complement%20Format.md)
