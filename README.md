@@ -7,7 +7,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## Table of Contents
 - [Points](#points-)
 - [Common](#common-️)
-- [Math](#math-️)
+- [Math](#math-)
 - [Predicates](#predicates-)
 - [Least Significant Bit (LSB)](#least-significant-bit-lsb-%EF%B8%8F)
 - [Most Significant Bit (MSB)](#most-significant-bit-msb-)
