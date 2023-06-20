@@ -1,4 +1,4 @@
-import { getLSB, removeLSB, setLSB, unsetLSB } from '../src/core/lsb';
+import { getLSB, removeLSB, setLSB, unsetLSB, toggleLSB } from '../src/core/lsb';
 
 describe('LSB', () => {
 
@@ -116,6 +116,20 @@ describe('LSB', () => {
             expect(unsetLSB(-3)).toBe(-4);
             expect(unsetLSB(-5)).toBe(-6);
             expect(unsetLSB(-7)).toBe(-8);
+        });
+    });
+
+    describe('toggleLSB', () => {
+        it('should toggle the least significant bit from 0 to 1', () => {
+            expect(toggleLSB(10)).toBe(11);
+            expect(toggleLSB(0)).toBe(1);
+            expect(toggleLSB(42)).toBe(43);
+        });
+
+        it('should toggle the least significant bit from 1 to 0', () => {
+            expect(toggleLSB(11)).toBe(10);
+            expect(toggleLSB(1)).toBe(0);
+            expect(toggleLSB(43)).toBe(42);
         });
     });
 });

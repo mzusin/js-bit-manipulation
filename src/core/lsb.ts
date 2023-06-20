@@ -29,3 +29,7 @@ export const setLSB = (num: number) => {
 export const unsetLSB = (num: number) => {
     return num & ~1;
 };
+
+export const toggleLSB = (num: number) => {
+    return num ^ 1;
+};
