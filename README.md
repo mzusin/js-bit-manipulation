@@ -68,7 +68,7 @@ Solutions to LeetCode problems in JavaScript using bit manipulations approach on
 - [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/3649410/javascript-bit-manipulation/)
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/solutions/3657019/javascript-bit-manipulation/)
 - [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/solutions/3660282/javascript-bit-manipulation/)
-
+- [136. Single Number](https://leetcode.com/problems/single-number/solutions/2007647/javascript-xor/)
 --------------
 
 ``` 
