@@ -43,4 +43,7 @@ declare module 'mz-bitwise' {
     // String
     export const getCharCodeSmallEn: (text: string, index: number) => number;
     export const getCharCodeCapitalEn: (text: string, index: number) => number;
+
+    // Masks
+    export const getNSetBitsMask: (n: number) => number;
 }

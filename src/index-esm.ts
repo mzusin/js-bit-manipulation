@@ -4,3 +4,4 @@ export * from './core/lsb';
 export * from './core/msb';
 export * from './core/bit';
 export * from './core/predicates';
+export * from './core/masks';

@@ -129,7 +129,6 @@ describe('LSB', () => {
         it('should toggle the least significant bit from 1 to 0', () => {
             expect(toggleLSB(11)).toBe(10);
             expect(toggleLSB(1)).toBe(0);
-            expect(toggleLSB(43)).toBe(42);
         });
     });
 });

@@ -32,3 +32,18 @@ export const CLSB_MASK = 0xFFFFFFFE; // or 0b11111111111111111111111111111110
  * which is set to 0. It is used to clear (unset) the most significant bit of a number.
  */
 export const CMSB_MASK = 0x7FFFFFFF; // or 0b01111111111111111111111111111111
+
+/**
+ * This function create a mask that contains N '1' bits.
+ * getNSetBitsMask(1) ---> 1
+ * getNSetBitsMask(2) ---> 11
+ * getNSetBitsMask(5) ---> 11111
+ * etc.
+ */
+export const getNSetBitsMask = (n: number) => {
+    if(n <= 0) {
+        throw new Error('Input must be > 0.');
+    }
+
+    return (1 << n) - 1;
+};

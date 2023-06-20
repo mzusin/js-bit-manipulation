@@ -60,6 +60,11 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - `export const countSetBits: (num: number) => number;`
 - `export const countUnsetBits: (num: number) => number;`
 
+## Masks 🎭
+- `export const getNSetBitsMask: (n: number) => number;`
+
+------------------------
+
 ## Practice Problems
 - [Bit Manipulation on leetcode.com](https://leetcode.com/tag/bit-manipulation/)
 
