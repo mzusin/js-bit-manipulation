@@ -82,6 +82,7 @@ Solutions to LeetCode problems in JavaScript using bit manipulations approach on
 - [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/solutions/3660282/javascript-bit-manipulation/)
 - [136. Single Number](https://leetcode.com/problems/single-number/solutions/2007647/javascript-xor/)
 - [476. Number Complement](https://leetcode.com/problems/number-complement/solutions/3660762/javascript-99-42/)
+- [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/solutions/3665456/javascript-3-solutions/)
 
 --------------
 
