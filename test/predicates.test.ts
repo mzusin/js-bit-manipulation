@@ -1,4 +1,4 @@
-import { isEven, isOdd, isEquals } from '../src/core/predicates';
+import { isEven, isOdd, isEquals, isNegative, isPositive } from '../src/core/predicates';
 
 describe('Predicates', () => {
 
@@ -59,4 +59,39 @@ describe('Predicates', () => {
         });
     });
 
+    describe('isNegative()', () => {
+        it('isNegative(0)', () => {
+            expect(isNegative(0)).toStrictEqual(false);
+        });
+
+        it('isNegative(1)', () => {
+            expect(isNegative(1)).toStrictEqual(false);
+        });
+
+        it('isNegative(-1)', () => {
+            expect(isNegative(-1)).toStrictEqual(true);
+        });
+
+        it('isNegative(-10)', () => {
+            expect(isNegative(-10)).toStrictEqual(true);
+        });
+    });
+
+    describe('isPositive()', () => {
+        it('isPositive(0)', () => {
+            expect(isPositive(0)).toStrictEqual(true);
+        });
+
+        it('isPositive(1)', () => {
+            expect(isPositive(1)).toStrictEqual(true);
+        });
+
+        it('isPositive(-1)', () => {
+            expect(isPositive(-1)).toStrictEqual(false);
+        });
+
+        it('isPositive(-10)', () => {
+            expect(isPositive(-10)).toStrictEqual(false);
+        });
+    });
 });

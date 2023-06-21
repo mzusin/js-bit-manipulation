@@ -24,3 +24,13 @@ export const isEquals = (num1: number, num2: number) => {
 
     return (num1 ^ num2) === 0;
 };
+
+export const isNegative = (num: number) => {
+    // 0x80000000 = 0b10000000000000000000000000000000
+    return (num & 0x80000000) !== 0; // 0x means hexadecimal (base 16)
+};
+
+export const isPositive = (num: number) => {
+    // 0x80000000 = 0b10000000000000000000000000000000
+    return (num & 0x80000000) === 0; // 0x means hexadecimal (base 16)
+};

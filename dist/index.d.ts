@@ -18,6 +18,8 @@ declare module 'mz-bitwise' {
     export const isEven: (num: number) => boolean;
     export const isOdd: (num: number) => boolean;
     export const isEquals: (num1: number, num2: number) => boolean;
+    export const isNegative: (num: number) => boolean;
+    export const isPositive: (num: number) => boolean;
 
     // Least Significant Bit (LSB)
     export const getLSB: (num: number) => number;
