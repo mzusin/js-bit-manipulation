@@ -70,7 +70,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 ## Masks 🎭
 - `export const getNSetBitsMask: (n: number) => number;`
 
-## Number Systems 💡
+## Number Systems 🔢
 - `export const binaryToHex: (num: number) => string;`
 
 ------------------------
