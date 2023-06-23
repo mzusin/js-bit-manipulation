@@ -88,6 +88,7 @@ Solutions to LeetCode problems in JavaScript using bit manipulations approach on
 - [476. Number Complement](https://leetcode.com/problems/number-complement/solutions/3660762/javascript-99-42/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/solutions/3665456/javascript-3-solutions/)
 - [405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/solutions/3673530/javascript-bit-manipulation/)
+- [342. Power of Four](https://leetcode.com/problems/power-of-four/solutions/3673730/javascript-math-bit-manipulation-solutions/)
 
 --------------
 
