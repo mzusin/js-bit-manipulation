@@ -48,4 +48,7 @@ declare module 'mz-bitwise' {
 
     // Masks
     export const getNSetBitsMask: (n: number) => number;
+
+    // Number Systems
+    export const binaryToHex: (num: number) => string;
 }

@@ -13,6 +13,7 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 - [Most Significant Bit (MSB)](#most-significant-bit-msb-)
 - [Working with bits](#working-with-bits-)
 - [Masks](#masks-)
+- [Number Systems](#number-systems-)
 - [Practice Problems](#practice-problems)
 - [LeetCode Solutions](#leetcode-solutions)
 
@@ -68,6 +69,9 @@ You are welcome to check the [source code](https://github.com/mzusin/js-bit-mani
 
 ## Masks 🎭
 - `export const getNSetBitsMask: (n: number) => number;`
+
+## Number Systems 💡
+- `export const binaryToHex: (num: number) => string;`
 
 ------------------------
 
