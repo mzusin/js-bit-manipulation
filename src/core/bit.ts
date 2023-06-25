@@ -48,3 +48,30 @@ export const countUnsetBits = (num: number) => {
 
     return count;
 };
+
+/**
+ * Unset the rightmost set bit to 0
+ * and set all the bits to the right of it to 1.
+ */
+export const unsetRightmostSetBitAndSetAllNextBits = (num: number) => {
+    return num - 1;
+};
+
+/**
+ * (A - 1): Subtracting 1 from A flips the rightmost set bit of A to 0 and
+ * flips all the bits to the right of it to 1.
+ * For example, if A is 10101010, (A - 1) would be 10101001.
+ *
+ * ~(A - 1): The ~ operator is the bitwise NOT operator,
+ * which flips all the bits in the number.
+ * So ~(A - 1) flips the bits in (A - 1).
+ *
+ * A & ~(A - 1): The & operator is the bitwise AND operator,
+ * which performs a bitwise AND operation on the bits of A and ~(A - 1).
+ * The result is a number that has only the rightmost set bit of A remaining,
+ * and all other bits are set to 0.
+ * This effectively isolates the rightmost set bit of A.
+ */
+export const getRightmostSetBit = (num: number) => {
+    return num & ~(num - 1);
+};

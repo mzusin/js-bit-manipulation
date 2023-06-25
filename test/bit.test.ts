@@ -2,6 +2,7 @@ import {
     setBitAtPosition, unsetBitAtPosition,
     toggleBitAtPosition, invertBits,
     isBitSetAtPosition, countSetBits, countUnsetBits,
+    unsetRightmostSetBitAndSetAllNextBits, getRightmostSetBit,
 } from '../src/core/bit';
 
 describe('Bit', () => {
@@ -167,6 +168,43 @@ describe('Bit', () => {
 
         it('countUnsetBits(5)', () => {
             expect(countUnsetBits(5)).toStrictEqual(1); // 101
+        });
+    });
+
+    describe('unsetRightmostSetBitAndSetAllNextBits()', () => {
+        it('unsetRightmostSetBitAndSetAllNextBits(0b10101010)', () => {
+            expect(unsetRightmostSetBitAndSetAllNextBits(0b10101010)).toStrictEqual(0b10101001);
+        });
+
+        it('unsetRightmostSetBitAndSetAllNextBits(0b101010100)', () => {
+            expect(unsetRightmostSetBitAndSetAllNextBits(0b101010100)).toStrictEqual(0b101010011);
+        });
+    });
+
+    describe('getRightmostSetBit()', () => {
+        it('should return 1 for 1', () => {
+            const result = getRightmostSetBit(1);
+            expect(result).toBe(1);
+        });
+
+        it('should return 2 for 2', () => {
+            const result = getRightmostSetBit(2);
+            expect(result).toBe(2);
+        });
+
+        it('should return 4 for 12', () => {
+            const result = getRightmostSetBit(12);
+            expect(result).toBe(4);
+        });
+
+        it('should return 1 for negative numbers', () => {
+            const result = getRightmostSetBit(-7);
+            expect(result).toBe(1);
+        });
+
+        it('should return 0 for 0', () => {
+            const result = getRightmostSetBit(0);
+            expect(result).toBe(0);
         });
     });
 });
