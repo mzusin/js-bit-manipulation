@@ -5,6 +5,7 @@
 ```
 x ^ x = 0
 x ^ 0 = x
+x ^ (~x) = -1
 ```
 
 ## Commutativity
@@ -33,9 +34,12 @@ Equation like `a = b ^ x` or `a = x ^ b` can be solved like: `x = a ^ b`
 ## Alternative XOR Implementations
 
 ```
-num1 ^ num2 = (num1 | num2) - (num1 & num2);
-num1 ^ num2 = (num1 | num2) & (~num1 | ~num2);
-num1 ^ num2 = (num1 & (~num1)) | ((~num1) & num1);
-num1 ^ num2 = (num1 + num2 - (2 * (num1 & num2)));
+x ^ y = (x & y) | (x & y)
+x ^ y = (x | y) & (x | y)
+x ^ y = (x | y) & (x & y)
+x ^ y = (x | y) - (x & y);
+x ^ y = (x | y) & (~x | ~y);
+x ^ y = (x & (~x)) | ((~x) & x);
+x ^ y = (x + y - (2 * (x & y)));
 ```
 

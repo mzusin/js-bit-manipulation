@@ -43,7 +43,27 @@ A | B = B | A
 ~(A | B) = (~A) & (~B)
 ```
 
+## Absorption
+
+```
+x | (x & y) = x
+x & (x | y) = x
+
+// Proof: https://www.nayuki.io/page/boolean-algebra-laws
+```
 
 ## A & (A - 1)
 The result is: to change the last 1 of the binary representation of A to 0.
+
+## Diff
+```
+x | (~(x) & y) = x | y
+x & (~(x) | y) = x & y
+(x & y) | (x & ~(y)) = x
+(x | y) & (x | ~(y)) = x
+(x & y) | (~(x) & z) | (y & z) = (x & y) | (~(x) & z)
+(x | y) & (~(x) | z) & (y | z) = (x | y) & (~(x) | z)
+
+// Proof: https://www.nayuki.io/page/boolean-algebra-laws
+```
 
