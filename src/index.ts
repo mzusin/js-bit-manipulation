@@ -6,6 +6,7 @@ import * as bit from './core/bit';
 import * as predicates from './core/predicates';
 import * as masks from './core/masks';
 import * as numberSystems from './core/number-systems';
+import * as count from './core/count';
 
 const api = {
     ...common,
@@ -16,6 +17,7 @@ const api = {
     ...predicates,
     ...masks,
     ...numberSystems,
+    ...count,
 };
 
 declare global {
@@ -34,3 +36,4 @@ export * from './core/predicates';
 export * from './core/math';
 export * from './core/masks';
 export * from './core/number-systems';
+export * from './core/count';

@@ -1,6 +1,6 @@
 {
   "name": "js-bit-manipulation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of bit manipulation helpers written TypeScript.",
   "type": "module",
   "main": "./dist/mz-bitwise.min.js",
